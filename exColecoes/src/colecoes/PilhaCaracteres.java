@@ -3,21 +3,21 @@ package colecoes;
 import java.util.Stack;
 
 public class PilhaCaracteres {
-    Stack<String> pilha;
+    Stack<Character> pilha;
     
     public PilhaCaracteres(){
         pilha = new Stack<>();
     }
 
-    public void reverseString(String[] a){
-        for(String i : a){
-            pilha.push(i);
-        }
+    public void reverseString(String word){
+        for(int i = 0; i < word.length(); i++){
+            pilha.push(word.charAt(i));
+        } 
     }
 
     public void printStack(){
-        for(String i : pilha){
-            System.out.println(i);
+        while(!(pilha.isEmpty())){
+            System.out.print(pilha.pop());
         }
     }
 
