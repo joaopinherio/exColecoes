@@ -27,6 +27,7 @@ public class App {
         
         System.out.println("reverse:");
         pilha.printStack();
+        System.out.println();
     }
 
 
