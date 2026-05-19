@@ -1,6 +1,5 @@
 //package app;
 
-import java.util.Stack;
 import colecoes.*;
 
 public class App {
