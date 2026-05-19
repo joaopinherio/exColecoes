@@ -29,11 +29,12 @@ public class App {
     }
 
     public void ex1(String palavra) {
-        pilha.reverseString(palavra);
 
         System.out.println("Palavra ao Contrario:");
-        pilha.printStack();
-        System.out.println();
+
+        palavra = pilha.reverseToString(palavra);
+
+        System.out.println(palavra);
     }
 
     public void ex2(String palavra) {

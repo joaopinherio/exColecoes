@@ -9,17 +9,21 @@ public class PilhaCaracteres {
         pilha = new Stack<>();
     }
 
-    public void reverseString(String word){
-        for(int i = 0; i < word.length(); i++){
-            pilha.push(word.charAt(i));
+    public String reverseToString(String word){
+        stringToStack(word);
+        String retorno = "";
+        
+        while(!(pilha.isEmpty())){
+            String aux = pilha.pop().toString();
+            retorno = retorno.concat(aux);
+        }
+        return retorno;
+    }
+
+    public void stringToStack(String word){
+        for(Character c : word.toCharArray()){
+            pilha.push(c);
         } 
     }
-
-    public void printStack(){
-        while(!(pilha.isEmpty())){
-            System.out.print(pilha.pop());
-        }
-    }
-
 
 }
