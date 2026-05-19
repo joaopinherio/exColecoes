@@ -49,9 +49,12 @@ public class App {
     public void ex3(){
         String palavra = "Teste";
         
-        conjunto.addOneTime(palavra);
         
         System.out.println("sem repeticoes:");
+        
+        conjunto.addOneTime(palavra);
+        System.out.println();
+        
         conjunto.printSet();
 
         System.out.println();

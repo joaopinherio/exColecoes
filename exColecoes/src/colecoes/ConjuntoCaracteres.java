@@ -13,7 +13,7 @@ public class ConjuntoCaracteres {
     public void addOneTime(String word){
         for(int i = 0; i < word.length(); i++){
             if(conjunto.add(word.charAt(i))){
-                System.out.println(word.charAt(i));
+                System.out.print(word.charAt(i));
             }
         }
     }
