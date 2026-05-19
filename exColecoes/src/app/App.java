@@ -18,6 +18,8 @@ public class App {
     public void executar() {
         String palavra = "Teste";
 
+        System.out.println("Palavra original: " + palavra);
+
         ex1(palavra);
 
         ex2(palavra);
@@ -48,12 +50,9 @@ public class App {
     public void ex3(String palavra) {
         System.out.print("Sem repeticoes: ");
 
-        conjunto.addOneTime(palavra);
-        System.out.println();
+        palavra = conjunto.addOneTime(palavra);
 
-        conjunto.printSet();
-
-        System.out.println();
+        System.out.println(palavra);
     }
 
     public void ex4(String palavra){
