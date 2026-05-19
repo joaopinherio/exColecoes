@@ -59,14 +59,6 @@ public class App {
 
     public void ex4(String palavra){
         System.out.println("Letra/Ocorrencias");
-        
-        //dicionario.charOcorrencias(palavra);
-
-        //System.out.println();
-        
-        //dicionario.printMap();
-
-        //System.out.println(dicionario.charOcorrenciasToString(palavra));
 
         palavra = dicionario.charOcorrenciasToString(palavra);
 
