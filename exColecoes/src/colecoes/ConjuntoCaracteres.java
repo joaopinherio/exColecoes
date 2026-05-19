@@ -12,7 +12,9 @@ public class ConjuntoCaracteres {
 
     public void addOneTime(String word){
         for(int i = 0; i < word.length(); i++){
-            conjunto.add(word.charAt(i));
+            if(conjunto.add(word.charAt(i))){
+                System.out.println(word.charAt(i));
+            }
         }
     }
 

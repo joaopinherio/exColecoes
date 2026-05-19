@@ -6,16 +6,20 @@ import colecoes.*;
 public class App {
     PilhaCaracteres pilha;
     FilaCaracteres fila;
+    ConjuntoCaracteres conjunto;
 
     public App(){
         pilha = new PilhaCaracteres();
         fila = new FilaCaracteres();
+        conjunto = new ConjuntoCaracteres();
     }
     
     public void executar(){
         ex1();
 
         ex2();
+
+        ex3();
             
     }
     
@@ -38,6 +42,17 @@ public class App {
         
         System.out.println("sem vogais:");
         fila.printQueue();
+
+        System.out.println();
+    }
+
+    public void ex3(){
+        String palavra = "Teste";
+        
+        conjunto.addOneTime(palavra);
+        
+        System.out.println("sem repeticoes:");
+        conjunto.printSet();
 
         System.out.println();
     }
