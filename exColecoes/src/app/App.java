@@ -30,7 +30,7 @@ public class App {
 
     public void ex1(String palavra) {
 
-        System.out.println("Palavra ao Contrario:");
+        System.out.print("Palavra ao Contrario: ");
 
         palavra = pilha.reverseToString(palavra);
 
@@ -38,16 +38,15 @@ public class App {
     }
 
     public void ex2(String palavra) {
-        fila.onlyConsonants(palavra);
+        System.out.print("Sem vogais: ");
+        
+        palavra = fila.stringOnlyConsonants(palavra);
 
-        System.out.println("Sem vogais:");
-        fila.printQueue();
-
-        System.out.println();
+        System.out.println(palavra);
     }
 
     public void ex3(String palavra) {
-        System.out.println("Sem repeticoes:");
+        System.out.print("Sem repeticoes: ");
 
         conjunto.addOneTime(palavra);
         System.out.println();
@@ -58,7 +57,7 @@ public class App {
     }
 
     public void ex4(String palavra){
-        System.out.println("Letra/Ocorrencias");
+        System.out.print("Letra/Ocorrencias: ");
 
         palavra = dicionario.charOcorrenciasToString(palavra);
 

@@ -17,13 +17,16 @@ public class FilaCaracteres{
         }
     }
 
-    public void printQueue(){
-        //System.out.println(fila.toString());
+    public String stringOnlyConsonants(String word){
+        onlyConsonants(word);
+        String retorno = "";
+
         Object[] aFila = fila.toArray();
         for(Object o : aFila){
-            System.out.print(o.toString());
+            String cat = o.toString();
+            retorno = retorno.concat(cat);
         }
-
+        return retorno; 
     }
 
 }
