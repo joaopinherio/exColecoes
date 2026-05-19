@@ -2,8 +2,6 @@ package colecoes;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
-import java.util.HashSet;
 
 public class DicionarioCaracteres {
     Map<Character, Integer> dicionario;
@@ -12,8 +10,20 @@ public class DicionarioCaracteres {
         dicionario = new HashMap<>();
     }
 
+    public void charOcorrenciasToString(String word){
+        charOcorrencias(word);
+        String retorno = null;
+
+        for(Character c : word.toCharArray()){
+            String aux = dicionario.get(c).toString();
+            String 
+        }
+
+    }
+    
+    
+    
     public void charOcorrencias(String word){
-        Set<Character> auxSet = new HashSet();
 
         for(Character c : word.toCharArray()){
             if(dicionario.containsKey(c)){
