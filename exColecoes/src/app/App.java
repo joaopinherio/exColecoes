@@ -38,6 +38,8 @@ public class App {
         
         System.out.println("sem vogais:");
         fila.printQueue();
+
+        System.out.println();
     }
 
 }
