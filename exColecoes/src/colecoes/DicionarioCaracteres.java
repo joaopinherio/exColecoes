@@ -10,14 +10,16 @@ public class DicionarioCaracteres {
         dicionario = new HashMap<>();
     }
 
-    public void charOcorrenciasToString(String word){
+    public String charOcorrenciasToString(String word){
         charOcorrencias(word);
-        String retorno = null;
+        String retorno = "";
 
         for(Character c : word.toCharArray()){
-            String aux = dicionario.get(c).toString();
-            String 
+            String aux = c + dicionario.get(c).toString();
+            retorno = retorno.concat("," + aux);
         }
+
+        return retorno;
 
     }
     
