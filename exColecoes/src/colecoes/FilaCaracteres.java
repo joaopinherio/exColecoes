@@ -18,4 +18,10 @@ public class FilaCaracteres implements Collection{
         }
     }
 
+    public void printQueue(){
+        while(!(fila.isEmpty())){
+            System.out.print(fila.pool());
+        }
+    }
+
 }
