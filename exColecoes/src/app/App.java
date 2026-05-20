@@ -24,7 +24,7 @@ public class App {
          * depois o de fila, manipulando um array de char
          */
 
-        System.out.println("Exemplos genericos stack/queue\n");
+        System.out.println("Exemplos genericos stack/queue:\n");
 
         String palavra = "Teste";
         System.out.println("Palavra original: " + palavra);
@@ -54,7 +54,7 @@ public class App {
         /*
          * Por ultimo desenvolvemos uma classe
          * enxuta para a decodificacao do codigo dado pelo
-         * enunciado do T2,Para implementação do Deque, utilzamos
+         * enunciado do T2, para implementação do Deque, utilzamos
          * a biblioteca LinkedList que nos auxiliou com a possibilidade de ordenarmos os
          * caracteres
          * da primeira metade do deque utilizando o método "offer", o qual é elementar
