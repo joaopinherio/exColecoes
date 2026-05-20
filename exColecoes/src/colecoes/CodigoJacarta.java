@@ -48,7 +48,7 @@ public class CodigoJacarta {
 
         enfileraCodigo(segundaMetade);
     }
-    
+
     public void empilhaCodigo(String colecao[]){
         for (String trecho : colecao) {
             codigo.push(trecho);
@@ -60,4 +60,5 @@ public class CodigoJacarta {
             codigo.offer(trecho);
         }
     }
+
 }

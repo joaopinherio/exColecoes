@@ -6,11 +6,13 @@ public class App {
     PilhaCaracteres pilha;
     FilaCaracteres fila;
     GavetaDeJogos gaveta;
+    CodigoJacarta codigo;
 
     public App() {
         pilha = new PilhaCaracteres();
         fila = new FilaCaracteres();
         gaveta = new GavetaDeJogos();
+        codigo = new CodigoJacarta();
 
     }
 
@@ -33,8 +35,22 @@ public class App {
 
         String[] jogos = {"1:SF 3rd Strike" , "2: DOOM", "3: FORTNITE", "4: CSGO", "5: ZELDA OCARINA OF TIME"};
 
+        System.out.println("--------------------------------------------------------");
+
+        System.out.println("\n Exemplo de metodos utilizando a gaveta como pilha:");
         pilhaNaGaveta(jogos);
-        filaNaGaveta(jogos);        
+        System.out.println("\n Exemplo de metodos utilizando a gaveta como lista:");
+        filaNaGaveta(jogos);      
+        
+        System.out.println("--------------------------------------------------------");
+        
+        /*Por ultimo desenvolvemos uma classe
+        enxuta para a decodificacao do codigo dado pelo
+        enunciado do T2, com com um metodo adcionando a primeira metade
+        da entrada como pilha e a segunda metade fila */
+
+
+
 
     }
 
@@ -71,5 +87,6 @@ public class App {
     }
 
     
+
 
 }
