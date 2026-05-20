@@ -23,6 +23,9 @@ public class App {
          * programacao para exercitar primeiro o conceito de stack
          * depois o de fila, manipulando um array de char
          */
+
+        System.out.println("Exemplos genericos stack/queue\n");
+
         String palavra = "Teste";
         System.out.println("Palavra original: " + palavra);
 
@@ -46,7 +49,7 @@ public class App {
         System.out.println("\n Exemplo de metodos utilizando a gaveta como lista:");
         filaNaGaveta(jogos);
 
-        System.out.println("--------------------------------------------------------");
+        System.out.println("--------------------------------------------------------\n");
 
         /*
          * Por ultimo desenvolvemos uma classe
@@ -101,21 +104,19 @@ public class App {
     }
 
     public void decodificacaoJacarta() {
-        CodigoJacarta primeiraMetade = new CodigoJacarta();
-        primeiraMetade.entradaFstHalf();
+        LinkedList primeiraMetade = codigo.entradaFstHalf();
 
         System.out.println("Comecando do inicio: " + primeiraMetade + "\n");
 
-        CodigoJacarta segundaMetade = new CodigoJacarta();
-        primeiraMetade.entradaSndHalf();
+        LinkedList segundaMetade = codigo.entradaSndHalf();
 
         System.out.println("Comecando do fim:" + segundaMetade + "\n");
 
-        CodigoJacarta codigoCompleto = new CodigoJacarta();
-        codigoCompleto.appendMetades(primeiraMetade);
+        LinkedList codigoCompleto = new LinkedList<>();
+        codigoCompleto.addAll(primeiraMetade);
         codigoCompleto.addAll(segundaMetade);
 
-        System.out.println("Together: " + cabecaCauda);
+        System.out.println("Codigo completo: " + codigoCompleto);
 
         System.out.println();
     }

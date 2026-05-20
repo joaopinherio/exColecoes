@@ -9,7 +9,7 @@ public class CodigoJacarta {
         codigo = new LinkedList <>();
     }
 
-    public void entradaFstHalf(){
+    public LinkedList entradaFstHalf(){
         String[] primeiraMeatade = {
         "46", "6c", "52", "7a", "56", "75", "59", "55", "67", "31",
         "4a", "54", "4e", "45", "64", "7a", "67", "32", "4c", "57",
@@ -27,10 +27,10 @@ public class CodigoJacarta {
         "4e", "6a", "45", "78", "4d", "7a", "63", "35", "49", "54",
         "52", "6b", "4c", "54", "55"};
 
-        enfileraCodigo(primeiraMeatade);
+        return enfileraCodigo(primeiraMeatade);
     }
 
-    public void entradaSndHalf(){
+    public LinkedList entradaSndHalf(){
         String[] segundaMetade = {
         "3d", "6f", "67", "43", "4b", "51", "30", "4d", "6c", "51",
          "30", "4d", "6c", "63", "58", "51", "52", "5a", "55", "51",
@@ -46,24 +46,24 @@ public class CodigoJacarta {
         "6a", "4d", "31", "67", "7a", "4d", "33", "45", "6a", "4c",
         "78"};
 
-        empilhaCodigo(segundaMetade);
+        return empilhaCodigo(segundaMetade);
     }
 
-    public void empilhaCodigo(String colecao[]){
+    public LinkedList empilhaCodigo(String colecao[]){
+        LinkedList<String> aux = new LinkedList<>();
         for (String trecho : colecao) {
-            codigo.push(trecho);
+            aux.push(trecho);
         }
+        return aux;
     }
     
-    public void enfileraCodigo(String colecao[]){
+    public LinkedList enfileraCodigo(String colecao[]){
+        LinkedList<String> aux = new LinkedList<>();
         for (String trecho : colecao) {
-            codigo.offer(trecho);
+            aux.offer(trecho);
         }
+        return aux;
     }
 
-    public void appendMetades(CodigoJacarta half){
-        LinkedList<String> aux = half;
-        codigo.addAll(half);
-    }
 
 }
