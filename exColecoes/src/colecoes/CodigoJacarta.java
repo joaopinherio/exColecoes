@@ -27,7 +27,7 @@ public class CodigoJacarta {
         "4e", "6a", "45", "78", "4d", "7a", "63", "35", "49", "54",
         "52", "6b", "4c", "54", "55"};
 
-        empilhaCodigo(primeiraMeatade);
+        enfileraCodigo(primeiraMeatade);
     }
 
     public void entradaSndHalf(){
@@ -46,7 +46,7 @@ public class CodigoJacarta {
         "6a", "4d", "31", "67", "7a", "4d", "33", "45", "6a", "4c",
         "78"};
 
-        enfileraCodigo(segundaMetade);
+        empilhaCodigo(segundaMetade);
     }
 
     public void empilhaCodigo(String colecao[]){
@@ -59,6 +59,11 @@ public class CodigoJacarta {
         for (String trecho : colecao) {
             codigo.offer(trecho);
         }
+    }
+
+    public void appendMetades(CodigoJacarta half){
+        LinkedList<String> aux = half;
+        codigo.addAll(half);
     }
 
 }
